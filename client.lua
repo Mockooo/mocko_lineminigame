@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
 end)
 
 -- // Command for testing it
-RegisterCommand("testcircleminigame", function(source, args, raw)
+RegisterCommand("testlineminigame", function(source, args, raw)
     if (Start(5, 1000, 250, false, false, 5)) then
         print("You Have Won the Minigame")
     else

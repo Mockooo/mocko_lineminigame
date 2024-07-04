@@ -49,6 +49,6 @@ exports.mocko_lineminigame:Stop()
 
 ### Commands
 ```lua
-Command: /testcircleminigame
+Command: /testlineminigame
 What is does: Starts a Minigame with the Values of BSP1.2 and then Prints if Won or Not
 ```

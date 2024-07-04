@@ -104,9 +104,9 @@ function End(Win) {
         clearInterval(Playing);
         Playing = null;
         if (Won >= minlinesforwin) {
-            $.post("http://ls_lineminigame/exit", JSON.stringify({Win: true}));
+            $.post(`https://${GetParentResourceName()}/exit`, JSON.stringify({Win: true}));
         } else {
-            $.post("http://ls_lineminigame/exit", JSON.stringify({Win: false}));
+            $.post(`https://${GetParentResourceName()}/exit`, JSON.stringify({Win: false}));
         }
         $("#container").empty();
         $("body").fadeOut("fast")
@@ -127,9 +127,9 @@ function End(Win) {
     Playingindex++;
     if (Playingindex > Lineindex) {
         if (Won >= minlinesforwin) {
-            $.post("http://ls_lineminigame/exit", JSON.stringify({Win: true}));
+            $.post(`https://${GetParentResourceName()}/exit`, JSON.stringify({Win: true}));
         } else {
-            $.post("http://ls_lineminigame/exit", JSON.stringify({Win: false}));
+            $.post(`https://${GetParentResourceName()}/exit`, JSON.stringify({Win: false}));
         }
         $("#container").empty();
         $("body").fadeOut("fast")
